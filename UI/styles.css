@@ -408,7 +408,7 @@ img{
     width: 70vw;
 }
 
-.main_area{
+main{
     position: absolute;
     display:grid;
     width: 70vw;
