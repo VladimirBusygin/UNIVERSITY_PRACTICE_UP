@@ -10,12 +10,9 @@ import java.util.Scanner;
 public class PageServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        response.setContentType("text/html");
-        PrintWriter out = response.getWriter();
-        Scanner scanner = new Scanner(new File("/Users/vladimirbusygin/IdeaProjects/Task5_new/src/main/webapp/WEB-INF/page.html"));
-        while (scanner.hasNextLine()){
-            out.println(scanner.nextLine());
-        }
-
+        ServletContext context = request.getSession().getServletContext();
+        RequestDispatcher dispatcher = context.getRequestDispatcher("/page.html");
+        dispatcher.forward(request, response);
     }
+
 }
