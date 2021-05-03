@@ -1,0 +1,92 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+
+  <servlet>
+    <servlet-name>Adds</servlet-name>
+    <servlet-class>ServletsFolder.AddsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Adds</servlet-name>
+    <url-pattern>/adds</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>AddsSearch</servlet-name>
+    <servlet-class>ServletsFolder.AddsServletSearch</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddsSearch</servlet-name>
+    <url-pattern>/adds/search</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>StatusServlet</servlet-name>
+    <servlet-class>ServletsFolder.StatusServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StatusServlet</servlet-name>
+    <url-pattern>/status</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>GetServlet</servlet-name>
+    <servlet-class>ServletsFolder.GetServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetServlet</servlet-name>
+    <url-pattern>/get</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>JavaWebApplicationServlet</servlet-name>
+    <servlet-class>ServletsFolder.JavaWebApplicationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>JavaWebApplicationServlet</servlet-name>
+    <url-pattern></url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>CheckServlet</servlet-name>
+    <servlet-class>ServletsFolder.CheckServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CheckServlet</servlet-name>
+    <url-pattern>/check</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>PageServlet</servlet-name>
+    <servlet-class>ServletsFolder.PageServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PageServlet</servlet-name>
+    <url-pattern>/page</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>Test1Servlet</servlet-name>
+    <servlet-class>ServletsFolder.Test1Servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Test1Servlet</servlet-name>
+    <url-pattern>/test1</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>Test2Servlet</servlet-name>
+    <servlet-class>ServletsFolder.Test2Servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Test2Servlet</servlet-name>
+    <url-pattern>/test2</url-pattern>
+  </servlet-mapping>
+</web-app>
